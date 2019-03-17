@@ -14,6 +14,8 @@ Installation和setup是按照[Jekyll Quickstart][jekyll-quickstart]来进行的
 # Something to pay attention:
 1. 启用jekyll serve时，对_config.yml的修改不会被自动同步，直到下一次执行。
 
+2. 在_config.yml中，baseurl: "/NG_Blog/index.html"，url: "https://stephenng59.github.io"。否则在github pages上不能正常显示主题和posts。
+
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 Jekyll also offers powerful support for code snippets:
