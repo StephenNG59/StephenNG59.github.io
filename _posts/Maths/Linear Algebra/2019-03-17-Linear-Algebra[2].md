@@ -1,5 +1,6 @@
 ---
 layout: post
+# layout: default
 title:  "Linear Algebra[2] - Determinant"
 date:   2019-03-17 18:30:00 +0800
 ---

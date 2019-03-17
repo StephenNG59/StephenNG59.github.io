@@ -1,5 +1,6 @@
 ---
 layout: post
+# layout: default
 title:  "Linear Algebra[1] - Linear Transformations and Matrices"
 date:   2019-03-16 20:50:50 +0800
 ---

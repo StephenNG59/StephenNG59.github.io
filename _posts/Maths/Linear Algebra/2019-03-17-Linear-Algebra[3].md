@@ -1,5 +1,6 @@
 ---
 layout: post
+# layout: default
 title:  "Linear Algebra[3] - "
 date:   2019-03-17 19:10:00 +0800
 ---
@@ -27,8 +28,18 @@ From a geometric prospective, solving the equation $$A \vec{x} = \vec{v}$$, mean
 
     <center>$$\vec{x} = A^{-1} \vec{v} $$</center>
 
-    ![image1](../../../assets/img/LA_3_2.gif)
+    And you'll get a unique solution.
 
+    ![image2](../../../assets/img/LA_3_2.gif)
+
+    For spaces of higher dimension, when the number of equations equals the number of unknowns, it's *almost* certainly the case that there's a single, unique solution, as long as the transformation $$A$$ doesn't squish all of space into a lower dimension (which means, determinant is non-zero). 
+
+2.  $$der(A)$$ equals to 0
+    When the transformation associated with this system of equation squishes space into a smaller dimension, there is no inverse. You cannot unsquish a line to turn it into a plane. But still, it's possible that a solution exists. It's just that you have to be lucky enough that the $$\vec{v}$$ lives somewhere in the lower-dimensional space.
+
+    ![image3](../../../assets/img/LA_3_3.gif)
+
+    You might notice that some of these zero determinant cases feel a lot more restrictive than others. For instance, when you 
 
    
 [youtube-linear]: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
