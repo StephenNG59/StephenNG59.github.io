@@ -7,7 +7,7 @@ date:   2019-03-16 20:50:50 +0800
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-Based on a great series that introduce linear algebra [Essence of linear algebra - 3blue1brown][youtube-linear]. This blog covers [ch3][youtube-ch3], [ch4][youtube-ch4] and [ch5][youtube-ch5].
+Based on a great series that introduce linear algebra [Essence of linear algebra - 3blue1brown][youtube-linear]. This blog covers [ch3][youtube-ch3], [ch4][youtube-ch4] and [ch5][youtube-ch5]. For (much simplified) Chinese version article, please scroll down to bottom:)
 
 # What is Linear Transformation
 A **transformation** is basically a **function** that takes an input vector to generate some output vector. In our imagination, the vector is moved smoothly to a new position. So we call it a transformation instead of a function.
@@ -72,6 +72,22 @@ In 3D spaces, it's nothing different to 2D spaces but there's one more basis vec
 
 # Conclusion
 Every time you see a matrix, you can interpret it as a certain transformation of space. Once you really digest this idea, you're in a great position to understand linear algebra deeply. Almost all of the topics coming up will become easier to understand once you start thinking about matrices as transformations of space.
+
+------
+
+中文
+------
+------
+
+# 什么是线性变换
+
+实际上是一个函数，但由于有“过程感”，称之为“变换”。
+
+# 如何描述线性变换
+
+可以用$$n \times n$$矩阵描述，矩阵中的每一列，对应着原始空间中的单位基向量在变换之后的向量坐标。
+
+如果有两个（或以上）的列向量线性相关，那么变换后的空间会降维。
 
 [youtube-linear]: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 [youtube-ch3]: https://youtu.be/kYB8IZa5AuE

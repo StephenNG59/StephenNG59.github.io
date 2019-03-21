@@ -30,6 +30,21 @@ For 2D transformation, the determinant would be $$ad-bc$$. We could illustrate t
 
 With this understanding of determinant, we could easily prove $$der(M1M2) = der(M1) \times der(M2)$$.
 
+------
+
+中文
+------
+------
+
+# 什么是行列式
+
+一个矩阵的行列式的绝对值，等于：原始n维空间中，单位n维积（面积、体积……）在经过矩阵变换后的n维积大小。
+
+若行列式为负，即原始基向量在经过变换之后，相对位置发生了某种翻转（space flipped over）。
+
+若行列式为0，则矩阵变换使空间降维（即矩阵不满秩）。
+
+
 [youtube-linear]: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 [youtube-ch6]: https://youtu.be/Ip3X9LOh2dk
 [LA-1]: ../../../_posts/Linear-Algebra[1]
