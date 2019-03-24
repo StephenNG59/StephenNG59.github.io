@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Netease"
+date:   2019-03-21 18:42:17 +0800
+---
+
+# 网易游戏技术启示录
+
+* 网易游戏学院（公众号、网站）、网易游戏教程（书）
+
+* [LPV渲染][LPV]，[烘焙][hongbei]
+
+
+
+[LPV]: https://docs.unrealengine.com/en-us/Engine/Rendering/LightingAndShadows/LightPropagationVolumes
+[hongbei]: https://docs.blender.org/manual/zh-hans/dev/render/cycles/baking.html

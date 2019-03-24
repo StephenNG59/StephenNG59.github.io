@@ -1,0 +1,144 @@
+---
+layout: post
+title:  "Booming Games' Audition"
+date:   2019-03-21 18:42:17 +0800
+categories: Audition Computer
+---
+
+# 不鸣科技面试Review
+
+1. **Q**：四个平面最多把三维空间分成几部分？  
+  
+    **A**：15个。两个平面竖直，互相垂直-->4个；第三个平面水平横切-->8个；第四个平面竖直，与第一二个平面成45°，从俯视角度看，经过四象限中的三个，这时候整个空间有14个部分；让第四个平面稍微倾斜，不那么竖直，可以在上半部分（或者下半部分，二者只能有一）经过四象限中的四个，再多出一个部分，共15个。
+
+2. **Q**：软件架构设计需要：  
+  
+    **A**：高内聚，低耦合。
+
+3. **Q**：某个大型的网络游戏网站,现有几亿用户,为了实时获取前十名游戏分数最高的玩家,使用以下哪个排序算法比较合理： 
+  
+    A.基数排序    B.快速排序    C.二叉排序    D.堆排序  
+    
+    **A**：D.堆排序
+
+4. **Q**：UDP协议（“无连接服务”……）
+
+5. **Q**：“可重入函数”、“不可重入函数”
+
+6. **Q**：将引用作为函数返回值的优缺点？需要遵循哪些准则？
+
+    **A**：传统返回机制会把值复制到一个临时位置，而调用函数的程序将使用这个值；
+    
+        dup = accumulate(team, five);
+
+    如果accumulate返回一个结构，而不是指向结构的引用，将把整个结构复制到一个临时位置，再将这个拷贝复制给dup。
+
+    如果把引用作为返回值，将直接把team复制到dup，效率更高。
+
+    **需要注意的是**：避免返回函数终止时不再存在的内存单元的引用，比如指向函数内的临时变量的引用，在函数运行完毕后它将不再存在。
+
+    为避免这种问题，函数可以要求传入一个作为参数的引用，这个引用将指向调用函数使用的数据。然后返回这个引用。
+
+    ([C++-Primer-Plus:p399-WhyReturnAReference?][c++primer])
+
+7. **Q**：new/delete和malloc/free的区别？
+
+    **A**：
+
+8. **Q**：判断点是否在多边形内部？
+
+    **A**：
+
+9. **Q**：const的作用？
+
+    **A**：与#define相比，const可以：
+    
+    1. 限定作用域；#define除非被#undef，否则在编译过程始终生效。
+
+    2. 指明类型；
+
+    3. 在编译器中存在（#define在预处理器中存在），可以进入符号表（symbol table），方便debug；
+
+    4. 对于使用浮点常量而言，代码量可能更小。以#define PI 3.14159为例，预处理器盲目地将宏定义替换，可能导致目标代码出现多份3.14159.
+
+10. **Q**：堆和栈的区别？
+
+    **A**：
+
+11. **Q**：atoi()函数的实现（ASCII to integer）
+
+    **A**：
+
+    {% highlight C++ %}
+    bool isDigit(char c)
+    {
+        if (c <= '9' &&c >= '0') return true;
+        return false;
+    }
+
+    class Solution {
+    public:
+        int myAtoi(string str) {
+            char *pc = &(str[0]);
+            while (*pc == ' ') pc++;        // 忽略开头所有空格
+            char c = *pc;
+            
+            int result = 0, flag = 1;       // 结果正负号
+            
+            if (c == '\0')
+                return 0;
+            else if (c == '+') {
+                flag = 1;
+                pc++;
+            }
+            else if (c == '-') {
+                flag = -1;
+                pc++;
+            }
+            else if (!isDigit(c))           // 第一个字符不是数字和正负号，则返回0
+                return 0;
+            
+            while (isDigit(*pc))
+            {
+                c = *pc - '0';
+
+                // 判断是否越界
+                if (result > (INT_MAX - c) / 10)
+                    return INT_MAX;
+                else if (result < (INT_MIN + c) / 10)
+                    return INT_MIN;
+                // 进行计算
+                else
+                    result = result * 10 + c * flag;
+
+                pc++;
+            }
+            
+            return result;
+        }
+    };
+    {% endhighlight %}
+
+12. **Q**：“宏定义”，类型检查，和函数的关系
+
+13. **Q**：“友元函数”
+
+# 图形管线
+
+1. 顶点着色器：把顶点作为输入，把3D坐标转换为另一个3D坐标。
+
+2. 图元装配【Primitive Assembly】：把点装配成指定的形状（如三角形）。
+
+3. 几何着色器【Geometry Shader】：可以把输入顶点构造成新的图元和形状。
+
+4. 光栅化【Rasterization】：把图元映射成最终屏幕上相应的像素，并进行裁切（Clipping）。
+
+5. 片段着色器【Fragment Shader】：计算像素的最终颜色，通常计算包括场景的光照、阴影等，这是OpenGL高级效果产生的地方。
+
+6. 测试和混合【Test and Blending】：检测深度和模板（Stencil），决定是否丢弃；检查alpha值并进行混合。
+
+！每个部分的细节，深度检测，blend，等等。
+
+
+
+[c++primer]: http://faculty.euc.ac.cy/scharalambous/csc132/books/c%2B%2B_book%201.pdf

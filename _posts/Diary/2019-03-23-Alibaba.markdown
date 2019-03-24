@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Alibaba's Audition"
+date:   2019-03-23 10:34:10 +0800
+---
+
+# 
+
+* 线程和进程
+
+* TCP/IP
+
+* 数据库
+
+* multimap, <set>，最小生成树，burst balloons动态规划
+
+[Tencent's Audition]({{ site.baseurl }}{% post_url /Diary/2019-03-22-Tencent %})
