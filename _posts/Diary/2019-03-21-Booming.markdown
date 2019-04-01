@@ -5,7 +5,11 @@ date:   2019-03-21 18:42:17 +0800
 categories: Audition Computer
 ---
 
-# 不鸣科技面试Review
+- [面试问题Review](#%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98review)
+- [关于图形管线](#%E5%85%B3%E4%BA%8E%E5%9B%BE%E5%BD%A2%E7%AE%A1%E7%BA%BF)
+- [过程Review](#%E8%BF%87%E7%A8%8Breview)
+
+# 面试问题Review
 
 1. **Q**：四个平面最多把三维空间分成几部分？  
   
@@ -63,7 +67,7 @@ categories: Audition Computer
 
 10. **Q**：堆和栈的区别？
 
-    **A**：
+    **A**：https://www.cnblogs.com/yechanglv/p/6941993.html
 
 11. **Q**：atoi()函数的实现（ASCII to integer）
 
@@ -123,7 +127,15 @@ categories: Audition Computer
 
 13. **Q**：“友元函数”
 
-# 图形管线
+14. **Q**：线程和进程的区别
+
+    **A**：https://baijiahao.baidu.com/s?id=1611925141861592999&wfr=spider&for=pc
+
+15. **Q**：对简历相关的提问：项目中负责的工作？如何分工？对游戏模式的思考？说一下人工智能神经网络？
+
+
+
+# 关于图形管线
 
 1. 顶点着色器：把顶点作为输入，把3D坐标转换为另一个3D坐标。
 
@@ -138,6 +150,8 @@ categories: Audition Computer
 6. 测试和混合【Test and Blending】：检测深度和模板（Stencil），决定是否丢弃；检查alpha值并进行混合。
 
 ！每个部分的细节，深度检测，blend，等等。
+
+# 过程Review
 
 
 

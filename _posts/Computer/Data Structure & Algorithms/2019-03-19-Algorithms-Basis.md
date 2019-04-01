@@ -52,4 +52,14 @@ A不停调用B。利用变量的原值不断推算出变量的新值。效率高
 
 用于有序数组。
 
+# 二叉树遍历
+
+* 递归
+
+* 栈：[Stack][stack]。
+
+* 不用栈和递归：[Morrsis][morris]，空间$$O(1)$$。
+
 [add1]: https://blog.csdn.net/laoyang360/article/details/7855860
+[stack]: https://www.jianshu.com/p/12848eef3452
+[morris]: https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
