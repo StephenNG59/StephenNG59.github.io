@@ -67,7 +67,7 @@ categories: Audition Computer
 
 10. **Q**：堆和栈的区别？
 
-    **A**：https://www.cnblogs.com/yechanglv/p/6941993.html
+    **A**：[https://www.cnblogs.com/yechanglv/p/6941993.html]
 
 11. **Q**：atoi()函数的实现（ASCII to integer）
 
