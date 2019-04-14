@@ -5,7 +5,7 @@ date:   2019-03-22 20:07:17 +0800
 categories: Audition Computer
 ---
 
-# 腾讯面试Review
+# 03-22-腾讯网上面试（笔试）Review
 
 **三元组**
 
@@ -38,3 +38,23 @@ categories: Audition Computer
 [CPP][cpp]
 
 [cpp]: ../../assets/src/tencent-audition-trangle.cpp
+
+
+# 04-05-腾讯常规批笔试-游戏客户端-Review
+
+## 不定项选择题
+
+* 虚函数、纯虚函数的编译相关问题
+
+* std::swap用于std::vector的时间复杂度（O(1)）
+
+* TCP和UDP，三次握手中的行为
+
+* C#：struct和class
+
+* 3*3旋转矩阵、四元数、欧拉角
+
+* 优化帧率的方式（减少内存申请次数；降低纹理分辨率；简化NPC的AI；……？）
+
+* NPC用到的技术有哪些（自动寻路避障；行为树；有限状态机；……？）
+
