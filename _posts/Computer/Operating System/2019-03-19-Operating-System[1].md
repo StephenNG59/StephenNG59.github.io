@@ -65,8 +65,3 @@ date:   2019-03-19 11:40:00 +0800
 
 #### **线程同步**
 
-#### **静态链接和动态链接**
-
-https://blog.csdn.net/kang___xi/article/details/80210717
-
-https://blog.csdn.net/kang___xi/article/details/79571137
