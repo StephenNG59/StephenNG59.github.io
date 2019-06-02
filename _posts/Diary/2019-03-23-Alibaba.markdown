@@ -138,7 +138,7 @@ date:   2019-03-26 10:34:10 +0800
 
 * 进程和线程的区别？（**必问**）
 
-基本单元、是否共享内存空间；[进程和线程]({{ site.baseurl }}{% post_url /Operating System/2019-03-19-Operating-System[1] %})
+基本单元、是否共享内存空间；[进程和线程]({{ site.baseurl }}{% post_url /Computer/Operating-System/2019-03-19-Operating-System[1] %})
 
 * 进程之间通信的方式
 
